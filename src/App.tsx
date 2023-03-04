@@ -1,12 +1,13 @@
-import React from 'react';
-import {Home} from "./features";
+import React from 'react'
+
+import { Home } from './features'
 
 function App() {
-    return (
-        <>
-            <Home/>
-        </>
-    );
+  return (
+    <>
+      <Home />
+    </>
+  )
 }
 
-export default App;
+export default App
