@@ -1,7 +1,6 @@
 import {Link} from "./Link";
 import {useEffect, useState} from "react";
 
-
 const Header = () => {
     const [pastHeader, setPastHeader] = useState<boolean>(false);
     const headerTitle = 'ustun.io'
@@ -15,8 +14,6 @@ const Header = () => {
             document.documentElement.clientHeight
 
         const position = Number(Number(winScroll / height).toFixed(3))
-
-        console.log(position)
 
         if (position > 0.037)
             setPastHeader(true)
@@ -33,7 +30,7 @@ const Header = () => {
     }, [])
 
     return (
-        <div className={'w-full bg-gray-100 text-slate-700 dark:bg-slate-900 dark:text-slate-50'}>
+        <div className={'w-full bg-gray-100 text-slate-700 dark:bg-slate-900 dark:text-slate-50 z-50'}>
             <header
                 className={`w-4/5 mx-auto flex flex-col md:flex-row items-center justify-between h-28 transform transition duration-200 ease-in ${pastHeader ? 'fixed top-0 w-full px-32 max-h-16 bg-slate-900' : 'h-28'}`}>
                 <div>
@@ -41,9 +38,10 @@ const Header = () => {
                 </div>
                 <nav className={'mt-4 md:mt-0 md:mr-10 text-lg font-inter'}>
                     <ul className={`list-none flex space-x-8 ${pastHeader && 'text-base'}`}>
-                        <li><Link href={'projects'} label={'Projects'}/></li>
-                        <li><Link href={'about'} label={'About'}/></li>
-                        <li><Link href={'contact'} label={'Contact'}/></li>
+                        <li><Link href={'#home'} label={'Home'}/></li>
+                        <li><Link href={'/projects'} label={'Projects'}/></li>
+                        <li><Link href={'/about'} label={'About'}/></li>
+                        <li><Link href={'/contact'} label={'Contact'}/></li>
                     </ul>
                 </nav>
             </header>
