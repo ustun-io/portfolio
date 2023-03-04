@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "target": "es5",
     "lib": [
       "dom",
@@ -18,7 +19,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx",
+    "jsx": "preserve",
     "paths": {
       "@/assets/*": [
         "./src/assets/*"
@@ -33,5 +34,10 @@
   },
   "include": [
     "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "public",
+    "src/assets"
   ]
 }
