@@ -1,0 +1,43 @@
+/** Underline animation on hover */
+.--animation-hover-underline {
+  display: inline-block;
+  position: relative;
+}
+.--animation-hover-underline:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  transform-origin: bottom right;
+  transition: transform 300ms ease-out;
+  @apply bg-slate-400;
+}
+.--animation-hover-underline:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.--Link-typography-color {
+  /** Light mode */
+  @apply text-slate-800 active:text-slate-400;
+  /** Dark mode */
+  @apply dark:text-slate-200 dark:hover:text-slate-300 dark:active:text-orange-500;
+}
+
+.--Link-typography {
+  @apply font-inter uppercase font-light text-lg;
+  @apply select-none cursor-pointer;
+  @apply --Link-typography-color;
+}
+
+.--Link-animation {
+  @apply transition duration-100 ease-in;
+}
+
+.--Link {
+  @apply --Link-typography --Link-animation;
+  @apply --animation-hover-underline;
+}

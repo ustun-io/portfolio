@@ -1,10 +1,9 @@
-import { Wrapper } from '../../component/'
+import { Typography, Wrapper } from '../../component/'
 
 import introLogo from './asset/icon.png'
+import { description, jobTitle } from './hero.constant'
 
 const HeroComponent = () => {
-  const jobTitle = 'Fullstack Developer'
-  const description = `Hello, my name is Eren Üstün. I'm in my early 20s and from Switzerland. I work as a freelance Fullstack developer and create robust as well as user-friendly web apps.`
   return (
     <>
       <Wrapper innerClassName={'h-[40rem] w-full relative'}>
@@ -13,9 +12,13 @@ const HeroComponent = () => {
           <div className={'bg-slate-900 w-full h-full'}></div>
         </div>
         <div className={'flex justify-evenly absolute w-full top-1/4 -mt-5'}>
-          <div className={'w-[27rem] flex flex-col items-center justify-center'}>
-            <h1 className={'text-6xl font-bold font-poppins font-bold tracking-wide'}>{jobTitle}</h1>
-            <p className={'tracking-wide leading-6 mt-8 text-lg font-inter'}>{description}</p>
+          <div
+            className={
+              'w-[24rem] md:min-w-[31rem] md:max-w-[34rem] flex flex-col items-center justify-center text-center md:text-left md:px-0'
+            }
+          >
+            <Typography variant={'h1'} content={jobTitle} className={'text-slate-300'} />
+            <Typography variant={'p'} content={description} className={'text-slate-300 text-lg'} />
           </div>
           <img src={introLogo} alt={'svg icon'} className={'h-[25rem] -ml-10 hidden md:block'} />
         </div>

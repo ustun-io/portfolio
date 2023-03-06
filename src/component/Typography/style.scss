@@ -1,0 +1,48 @@
+.--Typography-color {
+  /** Light mode */
+  @apply text-slate-100;
+  /** Dark mode */
+  @apply dark:text-slate-100;
+}
+
+.--Typography-spacing {
+  @apply mb-4 tracking-wide;
+}
+
+.--Typography-headings {
+  @apply font-bold capitalize font-poppins;
+}
+
+.--Typography-h1 {
+  @apply text-6xl md:text-8xl md:leading-[6rem];
+  @apply --Typography-headings;
+  @apply --Typography-spacing;
+  @apply --Typography-color;
+}
+
+.--Typography-h2 {
+  @apply text-5xl lg:text-6xl lg:leading-[4rem];
+  @apply --Typography-headings;
+  @apply --Typography-spacing;
+  @apply --Typography-color;
+}
+
+.--Typography-h3 {
+  @apply text-4xl md:text-5xl md:leading-[2rem];
+  @apply --Typography-headings;
+  @apply --Typography-spacing;
+  @apply --Typography-color;
+}
+
+.--Typography-h4 {
+  @apply text-3xl md:text-4xl md:leading-[1rem];
+  @apply --Typography-headings;
+  @apply --Typography-spacing;
+  @apply --Typography-color;
+}
+
+.--Typography-p {
+  @apply text-base leading-6 font-inter;
+  @apply --Typography-spacing;
+  @apply --Typography-color;
+}
