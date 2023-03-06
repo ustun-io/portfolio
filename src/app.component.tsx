@@ -1,15 +1,16 @@
 import React, { useEffect } from 'react'
 
 import { APP_HEAD_TITLE } from './app.constant'
-import { Home } from './features'
+import { HeroComponent } from './module'
 
-function App() {
+const App = () => {
   useEffect(() => {
     document.title = APP_HEAD_TITLE
   }, [])
+
   return (
     <>
-      <Home />
+      <HeroComponent />
     </>
   )
 }

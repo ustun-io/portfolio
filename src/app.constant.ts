@@ -1,1 +1,1 @@
-export const APP_HEAD_TITLE = 'Home | Fullstack Web Developer | Eren Üstün'
+export const APP_HEAD_TITLE = 'Fullstack Web Development | Eren Üstün'
