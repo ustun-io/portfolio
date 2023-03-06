@@ -1,16 +1,16 @@
 import { useEffect, useState } from 'react'
 
-import { Link } from './Link'
+import { Link } from '../Link'
+
+import { HEADER_LOGO_TEXT } from './constant'
 
 const Header = () => {
   const [pastHeader, setPastHeader] = useState<boolean>(false)
-  const headerTitle = 'ustun.io'
 
   const handleScroll = () => {
     const winScroll = document.body.scrollTop || document.documentElement.scrollTop
 
     const height = document.documentElement.scrollHeight - document.documentElement.clientHeight
-
     const position = Number(Number(winScroll / height).toFixed(3))
 
     if (position > 0.037) setPastHeader(true)
@@ -33,21 +33,21 @@ const Header = () => {
         }`}
       >
         <div>
-          <h1 className={`font-roboto-mono ${pastHeader ? 'text-3xl' : 'text-5xl'}`}>{headerTitle}</h1>
+          <h1 className={`font-roboto-mono ${pastHeader ? 'text-3xl' : 'text-5xl'}`}>{HEADER_LOGO_TEXT}</h1>
         </div>
         <nav className={'mt-4 md:mt-0 md:mr-10 text-lg font-inter'}>
           <ul className={`list-none flex space-x-8 ${pastHeader && 'text-base'}`}>
             <li>
-              <Link href={'#home'} label={'Home'} />
+              <Link href={'/#home'} label={'Home'} />
             </li>
             <li>
-              <Link href={'/projects'} label={'Projects'} />
+              <Link href={'/#projects'} label={'Projects'} />
             </li>
             <li>
-              <Link href={'/about'} label={'About'} />
+              <Link href={'/#about'} label={'About'} />
             </li>
             <li>
-              <Link href={'/contact'} label={'Contact'} />
+              <Link href={'/#contact'} label={'Contact'} />
             </li>
           </ul>
         </nav>
