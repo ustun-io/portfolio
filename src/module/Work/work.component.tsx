@@ -4,11 +4,11 @@ const ProjectView = () => {
   return (
     <Wrapper>
       <div className={'w-full py-24'} id={'projects'}>
-        <Typography variant={'h1'}>
+        <Typography variant={'h1'} className={'text-center sm:text-left'}>
           <span className={'text-blue-300'}>My</span> Work
         </Typography>
-        <div className={'grid grid-cols-2'}>
-          <div className={'w-11/12 relative'}>
+        <div className={'grid grid-cols-1 lg:grid-cols-2 gap-y-5 lg:gap-y-0'}>
+          <div className={'w-full md:w-11/12 relative'}>
             <div className="relative max-w-full overflow-hidden bg-cover bg-no-repeat">
               <img
                 src="/image/showcase-shop.jpg"
@@ -30,7 +30,7 @@ const ProjectView = () => {
               </div>
             </div>
           </div>
-          <div className={'w-11/12 relative'}>
+          <div className={'w-full md:w-11/12 relative'}>
             <div className="relative max-w-full overflow-hidden bg-cover bg-no-repeat">
               <img
                 src="/image/showcase-shop.jpg"
