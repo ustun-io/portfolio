@@ -1,6 +1,6 @@
 import React from 'react'
 
-import App from './app.component'
+import { App } from './app.component'
 import { Header } from './component'
 import reportWebVitals from './reportWebVitals'
 

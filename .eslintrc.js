@@ -28,6 +28,7 @@ module.exports = {
         groups: [
           // Packages `react` and next related packages come first.
           ['^(react)(/.*|$)'],
+          ['^(ReactDOM)(/.*|$)'],
           // Internal packages.
           ['^(@|module)(/.*|$)'],
           ['^(@|shared)(/.*|$)'],

@@ -6,7 +6,7 @@
 }
 
 .--Typography-spacing {
-  @apply mb-4 tracking-wide;
+  @apply tracking-wide;
 }
 
 .--Typography-headings {
@@ -14,28 +14,28 @@
 }
 
 .--Typography-h1 {
-  @apply text-6xl md:text-8xl md:leading-[6rem];
+  @apply text-6xl md:text-8xl md:leading-[6rem] mb-10;
   @apply --Typography-headings;
   @apply --Typography-spacing;
   @apply --Typography-color;
 }
 
 .--Typography-h2 {
-  @apply text-5xl lg:text-6xl lg:leading-[4rem];
+  @apply text-5xl lg:text-6xl lg:leading-[4rem] mb-4;
   @apply --Typography-headings;
   @apply --Typography-spacing;
   @apply --Typography-color;
 }
 
 .--Typography-h3 {
-  @apply text-4xl md:text-5xl md:leading-[2rem];
+  @apply text-4xl md:text-5xl mb-5;
   @apply --Typography-headings;
   @apply --Typography-spacing;
   @apply --Typography-color;
 }
 
 .--Typography-h4 {
-  @apply text-3xl md:text-4xl md:leading-[1rem];
+  @apply text-3xl md:text-4xl md:leading-[1rem] mb-4;
   @apply --Typography-headings;
   @apply --Typography-spacing;
   @apply --Typography-color;
