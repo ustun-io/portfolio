@@ -15,6 +15,9 @@
   transition: transform 300ms ease-out;
   @apply bg-slate-400;
 }
+.--animation-hover-underline:active:after {
+  @apply bg-orange-500;
+}
 .--animation-hover-underline:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;

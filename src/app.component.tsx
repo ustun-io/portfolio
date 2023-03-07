@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 
 import { APP_HEAD_TITLE } from './app.constant'
-import { HeroComponent } from './module'
+import { HeroView, ProjectView } from './module'
 
 const App = () => {
   useEffect(() => {
@@ -9,10 +9,12 @@ const App = () => {
   }, [])
 
   return (
-    <>
-      <HeroComponent />
-    </>
+    <div className={'flex flex-col'}>
+      <HeroView />
+      <ProjectView />
+      <HeroView />
+    </div>
   )
 }
 
-export default App
+export { App }

@@ -1,4 +1,12 @@
-.__app_hero_bg {
+.--app-bg-hero {
   background-image: url("./asset/pexels-photo-52608.jpg");
   @apply bg-cover bg-center bg-no-repeat;
+}
+
+.--app-height-hero {
+  height: calc(100vh - 6rem);
+}
+
+.--app-height-hero-md {
+  height: calc(100vh - 7rem);
 }

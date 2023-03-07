@@ -5,7 +5,7 @@ import { Link } from '../Link'
 
 import { HEADER_LOGO_TEXT } from './constant'
 
-const Header = () => {
+export const Header = () => {
   const [pastHeader, setPastHeader] = useState<boolean>(false)
 
   const handleScroll = () => {
@@ -30,7 +30,7 @@ const Header = () => {
     <div className={'w-full bg-gray-50 text-slate-700 dark:bg-royal-blue dark:text-slate-50 z-50'}>
       <header
         className={`w-4/5 mx-auto flex flex-col md:flex-row items-center justify-between py-2 md:py-8 transform transition duration-200 ease-in z-50 ${
-          pastHeader ? 'fixed top-0 w-full px-32 max-h-16 bg-gray-50 dark:bg-royal-blue py-0' : ''
+          pastHeader ? 'fixed top-0 w-full px-48 max-h-16 bg-gray-50 dark:bg-royal-blue py-0' : ''
         }`}
       >
         <h1
@@ -53,5 +53,3 @@ const Header = () => {
     </div>
   )
 }
-
-export { Header }

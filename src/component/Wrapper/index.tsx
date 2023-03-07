@@ -8,7 +8,7 @@ interface WrapperProps {
   innerClassName?: string
 }
 
-const Wrapper = ({ children, outerClassName, innerClassName }: WrapperProps) => {
+export const Wrapper = ({ children, outerClassName, innerClassName }: WrapperProps) => {
   return (
     <div
       className={classNames('w-full bg-gray-100 text-slate-700 dark:bg-slate-800 dark:text-gray-50', outerClassName)}
@@ -17,5 +17,3 @@ const Wrapper = ({ children, outerClassName, innerClassName }: WrapperProps) => 
     </div>
   )
 }
-
-export { Wrapper }
